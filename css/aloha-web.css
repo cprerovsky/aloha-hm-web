@@ -1,0 +1,15 @@
+a.navbar-brand img {
+	margin-top: -8px;
+}
+
+body {
+	font-family: 'century-gothic', sans-serif;
+}
+
+ul.nav {
+	float: right;
+}
+
+.carousel .item {
+	background-color: #58a9da;
+}
