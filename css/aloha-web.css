@@ -13,3 +13,7 @@ ul.nav {
 .carousel .item {
 	background-color: #58a9da;
 }
+
+.carousel-inner {
+	border-bottom: 6px solid #58a9da;
+}
