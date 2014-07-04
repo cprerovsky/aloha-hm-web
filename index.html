@@ -68,7 +68,10 @@
         </h1>
         <p>
           Aloha Editor provides an intuitive, MS Word-like editing<br />
-          experience, fully embedded in your application.
+          experience, embedded seamlessly in your web application.
+        </p>
+        <p>
+          <button class="btn btn-info btn-xlg">Download</button>
         </p>
       </div>
     </div>
@@ -107,12 +110,12 @@
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
 
-    <div class="container download">
+    <!--div class="container download">
       <button class="btn btn-success btn-xlg"><span class="glyphicon glyphicon-download"></span> Download</button>
       <button class="btn btn-primary btn-xlg"><span class="glyphicon glyphicon-briefcase"></span> Commercial License</button>
       
       <hr class="featurette-divider" />
-    </div>
+    </div-->
 
 
 
@@ -123,7 +126,7 @@
     <div class="container marketing">
 
       <!-- Three columns of text below the carousel -->
-      <div class="row">
+      <!--div class="row">
         <div class="col-lg-4">
           <img class="img-circle" src="img/functional.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
           <h2>Functional WYSIWIG</h2>
@@ -148,21 +151,26 @@
             Most of the text on the web is still created using MS Word. We think, it should be written with Aloha Editor.
             Still, if you want to (or have to) use it, we made sure you can: just paste. We'll take care of the rest.
           </p>
-        </div><!-- /.col-lg-4 -->
+        </div>
       </div><!-- /.row -->
 
 
       <!-- START THE FEATURETTES -->
 
-      <hr class="featurette-divider">
+      <!--hr class="featurette-divider"-->
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It'll blow your mind.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">MS-Word friendly. <span class="text-muted">As you expect it to be.</span></h2>
+          <p class="lead">
+            Most of the text on the web is still created using MS Word. 
+            We think, it should be written with Aloha Editor.
+            Still, if you want to (or have to) use it, we made sure you can: 
+            just paste. We'll take care of the rest.
+          </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="img-circle" src="img/word-2013.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
         </div>
       </div>
 
@@ -170,11 +178,15 @@
 
       <div class="row featurette">
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="img-circle" src="img/open-source.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
         </div>
         <div class="col-md-7">
-          <h2 class="featurette-heading">Oh yeah, it's that good. <span class="text-muted">See for yourself.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Open Source. <span class="text-muted">Have a look!</span></h2>
+          <p class="lead">
+            What's mine is yours. Want to know how we created the most advanced editor? 
+            Take a look - it's open source!
+            Want to use it on an open source project of your's? No problemo.
+          </p>
         </div>
       </div>
 
@@ -182,11 +194,15 @@
 
       <div class="row featurette">
         <div class="col-md-7">
-          <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-          <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+          <h2 class="featurette-heading">Functional WYSIWYG. <span class="text-muted">For the hackers.</span></h2>
+          <p class="lead">
+            Aloha Editor follows the functional programming paradigm. Not keeping state means you simply
+            hook into the editor stack and use our extensive API to create a unique editing experience for your
+            customers.
+          </p>
         </div>
         <div class="col-md-5">
-          <img class="featurette-image img-responsive" data-src="holder.js/500x500/auto" alt="Generic placeholder image">
+          <img class="img-circle" src="img/functional.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
         </div>
       </div>
 
@@ -198,7 +214,7 @@
       <!-- FOOTER -->
       <footer>
         <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <p>&copy; 2014 Gentics Software GmbH, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
       </footer>
 
     </div><!-- /.container -->
@@ -224,7 +240,7 @@ $(function () {
     } else if (scrollTop === 0) {
       height = MAX_HEIGHT;
     } else {
-      height = MAX_HEIGHT - scrollTop / 5;
+      height = MAX_HEIGHT - scrollTop / 4;
     }
     return height + 'px';
   }
