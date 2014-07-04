@@ -50,9 +50,9 @@
             </div>
             <div class="navbar-collapse collapse">
               <ul class="nav navbar-nav">
-                <li class="active"><a href="#">Documentation</a></li>
-                <li><a href="#about">Download</a></li>
-                <li><a href="http://github.com/alohaeditor/Aloha-Editor" target="_blank">Github</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-book"></span> Documentation</a></li>
+                <li><a href="#"><span class="glyphicon glyphicon-download"></span> Download</a></li>
+                <li><a href="http://github.com/alohaeditor/Aloha-Editor" target="_blank"><span class="glyphicon glyphicon-link"></span> Github</a></li>
               </ul>
             </div>
           </div>
@@ -61,11 +61,23 @@
       </div>
     </div>
 
+    <div class="page-header header">
+      <div class="container">
+        <h1>
+          Edit Better.
+        </h1>
+        <p>
+          Aloha Editor provides an intuitive, MS Word-like editing<br />
+          experience, fully embedded in your application.
+        </p>
+      </div>
+    </div>
+
+
 
     <!-- Carousel
     ================================================== -->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
+    <!--div id="myCarousel" class="carousel slide" data-ride="carousel">
       <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
@@ -94,6 +106,13 @@
       <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div><!-- /.carousel -->
+
+    <div class="container download">
+      <button class="btn btn-success btn-xlg"><span class="glyphicon glyphicon-download"></span> Download</button>
+      <button class="btn btn-primary btn-xlg"><span class="glyphicon glyphicon-briefcase"></span> Commercial License</button>
+      
+      <hr class="featurette-divider" />
+    </div>
 
 
 
@@ -191,6 +210,30 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/docs.min.js"></script>
+    <script type="text/javascript">
+$(function () {
+  var $header = $('.page-header.header');
+  var $window = $(window);
+  var MAX_HEIGHT = 600;
+  var MIN_HEIGHT = 480;
+
+  function headerHeight (scrollTop) {
+    var height = 0;
+    if (scrollTop >= 400) {
+      height = MIN_HEIGHT;
+    } else if (scrollTop === 0) {
+      height = MAX_HEIGHT;
+    } else {
+      height = MAX_HEIGHT - scrollTop / 5;
+    }
+    return height + 'px';
+  }
+
+  $window.scroll(function () {
+      $header.css('height', headerHeight($window.scrollTop()));
+  });
+});
+    </script>
   </body>
 </html>
 
