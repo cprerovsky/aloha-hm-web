@@ -1,255 +1,200 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link rel="icon" href="favicon.ico">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="">
+		<meta name="author" content="">
+		<link rel="icon" href="favicon.ico">
 
-    <title>Aloha Editor</title>
+		<title>Aloha Editor</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+		<!-- Bootstrap core CSS -->
+		<link href="css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="js/ie-emulation-modes-warning.js"></script>
+		<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+		<!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+		<script src="js/ie-emulation-modes-warning.js"></script>
 
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="js/ie10-viewport-bug-workaround.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<script src="js/ie10-viewport-bug-workaround.js"></script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
 
-    <!-- Custom styles for this template -->
-    <link href="css/carousel.css" rel="stylesheet">
-    <link href="css/aloha-web.css" rel="stylesheet">
-  </head>
+		<!-- Custom styles for this template -->
+		<link href="css/carousel.css" rel="stylesheet">
+		<link href="css/aloha-web.css" rel="stylesheet">
+	</head>
 <!-- NAVBAR
 ================================================== -->
-  <body>
-    <div class="navbar-wrapper">
-      <div class="container">
+	<body>
+		<div class="navbar-wrapper">
+			<div class="container">
 
-        <div class="navbar navbar-inverse navbar-static-top" role="navigation">
-          <div class="container">
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#"><img src="img/aloha-editor-logo-white.png" alt="Aloha Editor" title="Aloha Editor"/></a>
-            </div>
-            <div class="navbar-collapse collapse">
-              <ul class="nav navbar-nav">
-                <li><a href="#"><span class="glyphicon glyphicon-book"></span> Documentation</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-download"></span> Download</a></li>
-                <li><a href="http://github.com/alohaeditor/Aloha-Editor" target="_blank"><span class="glyphicon glyphicon-link"></span> Github</a></li>
-              </ul>
-            </div>
-          </div>
-        </div>
+				<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+					<div class="container">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+								<span class="sr-only">Toggle navigation</span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+								<span class="icon-bar"></span>
+							</button>
+							<a class="navbar-brand" href="#"><img src="img/aloha-editor-logo-white.png" alt="Aloha Editor" title="Aloha Editor"/></a>
+						</div>
+						<div class="navbar-collapse collapse">
+							<ul class="nav navbar-nav">
+								<li><a href="#"><span class="glyphicon glyphicon-book"></span> Documentation</a></li>
+								<li><a href="#"><span class="glyphicon glyphicon-download"></span> Download</a></li>
+								<li><a href="http://github.com/alohaeditor/Aloha-Editor" target="_blank"><span class="glyphicon glyphicon-link"></span> Github</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
 
-      </div>
-    </div>
+			</div>
+		</div>
 
-    <div class="page-header header">
-      <div class="container">
-        <h1>
-          Edit Better.
-        </h1>
-        <p>
-          Aloha Editor provides an intuitive, MS Word-like editing<br />
-          experience, embedded seamlessly in your web application.
-        </p>
-        <p>
-          <button class="btn btn-info btn-xlg">Download</button>
-        </p>
-      </div>
-    </div>
-
-
-
-    <!-- Carousel
-    ================================================== -->
-    <!--div id="myCarousel" class="carousel slide" data-ride="carousel">
-      <ol class="carousel-indicators">
-        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-        <li data-target="#myCarousel" data-slide-to="1"></li>
-      </ol>
-      <div class="carousel-inner">
-        <div class="item active">
-          <img src="img/yellow-parrot.png" alt="Flying parrot">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Edit Better.</h1>
-              <p>Aloha Editor provides intuitive, MS Word-like content editing.</p>
-            </div>
-          </div>
-        </div>
-        <div class="item">
-          <img src="img/parrots.png" alt="Parrots">
-          <div class="container">
-            <div class="carousel-caption">
-              <h1>Integrate Better.</h1>
-              <p>Aloha Editor plays friendly with third party libraries and is easily integrated
-              into your existing application.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
-      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
-    </div><!-- /.carousel -->
-
-    <!--div class="container download">
-      <button class="btn btn-success btn-xlg"><span class="glyphicon glyphicon-download"></span> Download</button>
-      <button class="btn btn-primary btn-xlg"><span class="glyphicon glyphicon-briefcase"></span> Commercial License</button>
-      
-      <hr class="featurette-divider" />
-    </div-->
+		<div class="page-header header">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 header-content">
+						<h1>
+							Edit Better.
+						</h1>
+						<p>
+							Aloha Editor provides an intuitive, MS Word-like editing
+							experience, embedded seamlessly in your web application.
+						</p>
+						<p>
+							<button class="btn btn-info btn-xlg">Download</button>
+							<button class="btn btn-success btn-xlg">Try it!</button>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
 
 
+		<!-- Marketing messaging and featurettes
+		================================================== -->
+		<!-- Wrap the rest of the page in another container to center all the content. -->
 
-    <!-- Marketing messaging and featurettes
-    ================================================== -->
-    <!-- Wrap the rest of the page in another container to center all the content. -->
+		<div class="container marketing">
+			<!-- START THE FEATURETTES -->
 
-    <div class="container marketing">
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">MS-Word friendly. <span class="text-muted">As you expect it to be.</span></h2>
+					<p class="lead">
+						Most of the text on the web is still created using MS Word. 
+						We think, it should be written with Aloha Editor.
+						Still, if you want to (or have to) use it, we made sure you can: 
+						just paste. We'll take care of the rest.
+					</p>
+				</div>
+				<div class="col-md-5">
+					<img class="img-circle" src="img/word-2013.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+				</div>
+			</div>
 
-      <!-- Three columns of text below the carousel -->
-      <!--div class="row">
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/functional.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Functional WYSIWIG</h2>
-          <p>
-            Aloha Editor follows the functional programming paradigm. Not keeping state means you simply
-            hook into the editor stack and use our extensive API to create a unique editing experience for your
-            customers.
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/open-source.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>Open Source</h2>
-          <p>
-            What's mine is yours. Want to know how we created the most advanced editor? Take a look - it's open source!
-            Want to use it on an open source project of your's? No problemo.
-          </p>
-        </div>
-        <div class="col-lg-4">
-          <img class="img-circle" src="img/word-2013.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-          <h2>MS Word-friendly</h2>
-          <p>
-            Most of the text on the web is still created using MS Word. We think, it should be written with Aloha Editor.
-            Still, if you want to (or have to) use it, we made sure you can: just paste. We'll take care of the rest.
-          </p>
-        </div>
-      </div><!-- /.row -->
+			<hr class="featurette-divider">
 
+			<div class="row featurette">
+				<div class="col-md-5">
+					<img class="img-circle" src="img/open-source.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+				</div>
+				<div class="col-md-7">
+					<h2 class="featurette-heading">Open Source. <span class="text-muted">Have a look!</span></h2>
+					<p class="lead">
+						What's mine is yours. Want to know how we created the most advanced editor? 
+						Take a look - it's open source!
+						Want to use it on an open source project of your's? No problemo.
+					</p>
+				</div>
+			</div>
 
-      <!-- START THE FEATURETTES -->
+			<hr class="featurette-divider">
 
-      <!--hr class="featurette-divider"-->
+			<div class="row featurette">
+				<div class="col-md-7">
+					<h2 class="featurette-heading">Functional WYSIWYG. <span class="text-muted">For the hackers.</span></h2>
+					<p class="lead">
+						Aloha Editor follows the functional programming paradigm. Not keeping state means you simply
+						hook into the editor stack and use our extensive API to create a unique editing experience for your
+						customers.
+					</p>
+				</div>
+				<div class="col-md-5">
+					<img class="img-circle" src="img/functional.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
+				</div>
+			</div>
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">MS-Word friendly. <span class="text-muted">As you expect it to be.</span></h2>
-          <p class="lead">
-            Most of the text on the web is still created using MS Word. 
-            We think, it should be written with Aloha Editor.
-            Still, if you want to (or have to) use it, we made sure you can: 
-            just paste. We'll take care of the rest.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img class="img-circle" src="img/word-2013.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-        </div>
-      </div>
+			<hr class="featurette-divider">
 
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-5">
-          <img class="img-circle" src="img/open-source.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-        </div>
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Open Source. <span class="text-muted">Have a look!</span></h2>
-          <p class="lead">
-            What's mine is yours. Want to know how we created the most advanced editor? 
-            Take a look - it's open source!
-            Want to use it on an open source project of your's? No problemo.
-          </p>
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading">Functional WYSIWYG. <span class="text-muted">For the hackers.</span></h2>
-          <p class="lead">
-            Aloha Editor follows the functional programming paradigm. Not keeping state means you simply
-            hook into the editor stack and use our extensive API to create a unique editing experience for your
-            customers.
-          </p>
-        </div>
-        <div class="col-md-5">
-          <img class="img-circle" src="img/functional.png" alt="Generic placeholder image" style="width: 140px; height: 140px;">
-        </div>
-      </div>
-
-      <hr class="featurette-divider">
-
-      <!-- /END THE FEATURETTES -->
+			<!-- /END THE FEATURETTES -->
 
 
-      <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2014 Gentics Software GmbH, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
+			<!-- FOOTER -->
+			<footer>
+				<p class="pull-right"><a href="#">Back to top</a></p>
+				<p>&copy; 2014 Gentics Software GmbH, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+			</footer>
 
-    </div><!-- /.container -->
+		</div><!-- /.container -->
 
 
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/docs.min.js"></script>
-    <script type="text/javascript">
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/docs.min.js"></script>
+		<script type="text/javascript">
 $(function () {
-  var $header = $('.page-header.header');
-  var $window = $(window);
-  var MAX_HEIGHT = 600;
-  var MIN_HEIGHT = 480;
+	var $header = $('.page-header.header');
+	var $window = $(window);
+	var MAX_HEIGHT = 600;
+	var MIN_HEIGHT = 480;
+	var last = 0;
 
-  function headerHeight (scrollTop) {
-    var height = 0;
-    if (scrollTop >= 400) {
-      height = MIN_HEIGHT;
-    } else if (scrollTop === 0) {
-      height = MAX_HEIGHT;
-    } else {
-      height = MAX_HEIGHT - scrollTop / 4;
-    }
-    return height + 'px';
-  }
+	function headerHeight (scrollTop) {
+		var height = 0;
+		if (scrollTop >= 400) {
+			height = MIN_HEIGHT;
+		} else if (scrollTop === 0) {
+			height = MAX_HEIGHT;
+		} else {
+			height = MAX_HEIGHT - scrollTop / 4;
+		}
+		return height + 'px';
+	}
 
-  $window.scroll(function () {
-      $header.css('height', headerHeight($window.scrollTop()));
-  });
+	function backgroundY (scrollTop) {
+		return ((scrollTop / 2.5 * -1) - 250) + 'px';
+	}
+	
+	function parallax (time) {
+			var scrollTop = $window.scrollTop();
+			if (time - last > 25) {
+				$header
+					.css('height', headerHeight(scrollTop))
+					.css('background-position-y', backgroundY(scrollTop));
+				last = time;
+			}
+			window.requestAnimationFrame(parallax);
+	}
+
+	window.requestAnimationFrame(parallax);
+
 });
-    </script>
-  </body>
+		</script>
+	</body>
 </html>
 
