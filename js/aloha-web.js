@@ -22,5 +22,16 @@ $(function () {
 
 	window.requestAnimationFrame(parallax);
 
-	aloha($('.container.tryit')[0]);
+	aloha($('.container .tryit')[0]);
+	$('.btn.startdemo').click(function () {
+		$('.demo-wrap').slideDown();
+	});
+
+
+
+	aloha($('.header-content h1')[0]);
+
+	var boundary = aloha.boundaries.fromEndOfNode($('.header-content h1')[0]);
+	aloha.boundaries.select(boundary);
+	aloha.selections.show($('.aloha-caret')[0], boundary);
 });

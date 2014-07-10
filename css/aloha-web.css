@@ -28,6 +28,7 @@ ul.nav {
 	border: 0;
 	background: rgb(60, 60, 60);
 	padding-bottom: 0;
+	margin-bottom: 0;
 }
 
 .header {
@@ -78,4 +79,28 @@ ul.nav {
 
 .header .btn-xlg {
 	margin-right: 20px;
+}
+
+.aloha-ui button {
+	width: 34px;
+}
+
+.aloha-ui button i {
+	font-family: serif;
+	font-weight: bold;
+}
+
+.tryit {
+	font-size: 21px;
+	font-weight: 300;
+}
+
+.tryit h2 {
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.demo-wrap {
+	background-color: rgb(230,230,230);
+	padding: 50px 0;
 }
