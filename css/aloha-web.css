@@ -60,14 +60,6 @@ ul.nav {
 	padding-right: 5px;
 }
 
-.carousel .item {
-	background-color: #58a9da;
-}
-
-.carousel-inner {
-	border-bottom: 6px solid #58a9da;
-}
-
 .container.download {
 	text-align: center;
 	margin-bottom: 100px;
@@ -86,9 +78,4 @@ ul.nav {
 
 .header .btn-xlg {
 	margin-right: 20px;
-}
-
-.featurette .img-circle {
-	margin-left: 35%;
-	margin-top: 30%;
 }

@@ -20,8 +20,7 @@ $(function () {
 			window.requestAnimationFrame(parallax);
 	}
 
-	
-
-
 	window.requestAnimationFrame(parallax);
+
+	aloha($('.container.tryit')[0]);
 });
