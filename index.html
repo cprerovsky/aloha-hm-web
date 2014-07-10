@@ -37,7 +37,7 @@
 		<div class="navbar-wrapper">
 			<div class="container">
 
-				<div class="navbar navbar-inverse navbar-static-top" role="navigation">
+				<div class="navbar navbar-static-top" role="navigation">
 					<div class="container">
 						<div class="navbar-header">
 							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -158,7 +158,7 @@
 		<script src="js/docs.min.js"></script>
 		<script type="text/javascript">
 $(function () {
-	var $header = $('.page-header.header');
+	var $header = $('.page-header.header .row');
 	var $window = $(window);
 	var MAX_HEIGHT = 600;
 	var MIN_HEIGHT = 480;
@@ -177,14 +177,15 @@ $(function () {
 	}
 
 	function backgroundY (scrollTop) {
-		return ((scrollTop / 2.5 * -1) - 250) + 'px';
+		return (scrollTop / -4) + 'px';
 	}
 	
 	function parallax (time) {
+
 			var scrollTop = $window.scrollTop();
-			if (time - last > 25) {
+			if (time - last > 15) {
 				$header
-					.css('height', headerHeight(scrollTop))
+					//.css('height', headerHeight(scrollTop))
 					.css('background-position-y', backgroundY(scrollTop));
 				last = time;
 			}
