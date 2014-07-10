@@ -181,14 +181,9 @@ $(function () {
 	}
 	
 	function parallax (time) {
-
 			var scrollTop = $window.scrollTop();
-			if (time - last > 15) {
-				$header
-					//.css('height', headerHeight(scrollTop))
-					.css('background-position-y', backgroundY(scrollTop));
-				last = time;
-			}
+			$header
+				.css('background-position-y', backgroundY(scrollTop));
 			window.requestAnimationFrame(parallax);
 	}
 
