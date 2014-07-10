@@ -36,7 +36,6 @@
 	<body>
 		<div class="navbar-wrapper">
 			<div class="container">
-
 				<div class="navbar navbar-static-top" role="navigation">
 					<div class="container">
 						<div class="navbar-header">
@@ -57,7 +56,6 @@
 						</div>
 					</div>
 				</div>
-
 			</div>
 		</div>
 
@@ -126,41 +124,8 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 		<script src="js/bootstrap.min.js"></script>
 		<script src="js/docs.min.js"></script>
-		<script type="text/javascript">
-$(function () {
-	var $header = $('.page-header.header .row');
-	var $window = $(window);
-	var MAX_HEIGHT = 600;
-	var MIN_HEIGHT = 480;
-	var last = 0;
-
-	function headerHeight (scrollTop) {
-		var height = 0;
-		if (scrollTop >= 400) {
-			height = MIN_HEIGHT;
-		} else if (scrollTop === 0) {
-			height = MAX_HEIGHT;
-		} else {
-			height = MAX_HEIGHT - scrollTop / 4;
-		}
-		return height + 'px';
-	}
-
-	function backgroundY (scrollTop) {
-		return (scrollTop / -4) + 'px';
-	}
-	
-	function parallax (time) {
-			var scrollTop = $window.scrollTop();
-			$header
-				.css('background-position-y', backgroundY(scrollTop));
-			window.requestAnimationFrame(parallax);
-	}
-
-	window.requestAnimationFrame(parallax);
-
-});
-		</script>
+		<script src="js/aloha.min.js"></script>
+		<script src="js/aloha-web.js"></script>
 	</body>
 </html>
 
