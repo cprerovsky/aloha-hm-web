@@ -22,16 +22,26 @@ $(function () {
 
 	window.requestAnimationFrame(parallax);
 
+	function flashHeader($obj, size, callback) {
+		$obj.css('text-shadow', '0 0 ' + size + 'px white');
+		if (size > 0) {
+			setTimeout(function () {
+				flashHeader($obj, --size, callback);
+			}, 10);
+		} else {
+			callback();
+		}
+	}
+
 	aloha($('.container .tryit')[0]);
 	$('.btn.startdemo').click(function () {
 		$('.demo-wrap').slideDown();
 	});
 
-
-
 	aloha($('.header-content h1')[0]);
 
-	var boundary = aloha.boundaries.fromEndOfNode($('.header-content h1')[0]);
-	aloha.boundaries.select(boundary);
-	aloha.selections.show($('.aloha-caret')[0], boundary);
+	flashHeader($('.header h1'), 30, function () {
+		var boundary = aloha.boundaries.fromEndOfNode($('.header-content h1')[0]);
+		aloha.selections.select(boundary, boundary, aloha.editor);
+	});
 });
