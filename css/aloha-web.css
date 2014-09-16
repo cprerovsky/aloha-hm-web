@@ -1,73 +1,49 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
 a.navbar-brand img {
-	margin-top: -8px;
+	margin: -14px -12px;
 }
 
-html {
-	-webkit-transform: translate3d(0,0,0);
-}
-
-body {
-	font-family: 'century-gothic', sans-serif;
-	margin-top: 20px;
-	padding-top: 0;
-}
-
-ul.nav {
-	float: right;
-}
-
-.nav>li>a {
-	color: white;
-}
-
-.nav>li>a:hover {
-	background: transparent;
+body * {
+	font-family: 'Istok Web', sans-serif;
+	-moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    font-weight: 300;
+    color: #333;
 }
 
 .page-header {
 	border: 0;
 	background: rgb(60, 60, 60);
+	padding-top: 40px;
 	padding-bottom: 0;
 	margin-bottom: 0;
+	box-shadow: inset 0px 0px 200px black;
 }
 
-.header {
-	margin-top: -120px;
-}
-
-.header .row {
-	background-image: url('../img/flying-parrot.png');
-	background-position: 150% 0;
+.froggy {
+	background-image: url('../img/froggy.png');
+	background-position: 80% 0%;
+	background-size: 35%;
 	background-repeat: no-repeat;	
-}
-
-.header .header-content {
-	padding-top: 200px;
 }
 
 .header h1 {
 	font-size: 70px;
 	margin-bottom: 30px;
-	color: #eee;
+	color: white;
 }
 
 .header p {
 	font-size: 24px;
 	margin-bottom: 30px;
-	color: #bcbcbc;
+	color: #eee;
 }
 
 .navbar-collapse .glyphicon {
 	padding-right: 5px;
-}
-
-.container.download {
-	text-align: center;
-	margin-bottom: 100px;
-}
-
-.container.download button {
-	margin: 10px;
 }
 
 .btn-xlg {
@@ -79,28 +55,4 @@ ul.nav {
 
 .header .btn-xlg {
 	margin-right: 20px;
-}
-
-.aloha-ui button {
-	width: 34px;
-}
-
-.aloha-ui button i {
-	font-family: serif;
-	font-weight: bold;
-}
-
-.tryit {
-	font-size: 21px;
-	font-weight: 300;
-}
-
-.tryit h2 {
-	font-weight: bold;
-	text-transform: uppercase;
-}
-
-.demo-wrap {
-	background-color: rgb(230,230,230);
-	padding: 50px 0;
 }
