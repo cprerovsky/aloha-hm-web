@@ -4,6 +4,10 @@ a.navbar-brand img {
 	margin: -14px -12px;
 }
 
+body {
+	font-size: 16px;
+}
+
 body * {
 	font-family: 'Istok Web', sans-serif;
 	-moz-osx-font-smoothing: grayscale;
@@ -18,6 +22,10 @@ body * {
 	padding: 5px 0;
 	background: rgba(255,255,255,0.95);
 	border: 0;
+}
+
+.navbar .container, .page-header .container {
+	padding: 0;
 }
 
 .page-header {
@@ -45,6 +53,15 @@ body * {
 	font-size: 24px;
 	margin-bottom: 30px;
 	color: #eee;
+}
+
+h2 b {
+	font-weight: 700;
+}
+
+.muted {
+	background: white;
+	box-shadow: 0 0 100px rgb(240,240,240);
 }
 
 .navbar-collapse img {
@@ -102,10 +119,24 @@ body * {
 	box-shadow: 0 0 20px;
 }
 
-.marketing {
-	margin-top: 40px;
+.container {
+	padding-top: 60px;
+	padding-bottom: 60px;
 }
 
 .featurette h2 {
 	margin-bottom: 40px;
+}
+
+.featurette .glyphicon {
+	font-size: 100px;
+}
+
+.container p {
+	line-height: 1.5;
+}
+
+#license .gpl-logo {
+	margin-top: 40px;
+	text-align: center;
 }
