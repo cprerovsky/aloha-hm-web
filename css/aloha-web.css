@@ -14,19 +14,24 @@ body * {
     color: #333;
 }
 
+.navbar {
+	padding: 5px 0;
+	background: rgba(255,255,255,0.95);
+	border: 0;
+}
+
 .page-header {
 	border: 0;
 	background: rgb(60, 60, 60);
 	padding-top: 40px;
-	padding-bottom: 0;
-	margin-bottom: 0;
 	box-shadow: inset 0px 0px 200px black;
+	margin-top: 60px;
 }
 
 .froggy {
 	background-image: url('../img/froggy.png');
 	background-position: 80% 0%;
-	background-size: 35%;
+	background-size: 600px 380px;
 	background-repeat: no-repeat;	
 }
 
@@ -42,8 +47,18 @@ body * {
 	color: #eee;
 }
 
-.navbar-collapse .glyphicon {
-	padding-right: 5px;
+.navbar-collapse img {
+	width: 16px;
+	height: 16px;
+}
+
+.navbar-collapse .glyphicon, .navbar-collapse img {
+	margin-right: 5px;
+}
+
+.navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+	border: 0;
+	background: white;
 }
 
 .btn-xlg {
@@ -55,4 +70,42 @@ body * {
 
 .header .btn-xlg {
 	margin-right: 20px;
+}
+
+.page-header .btn-wrap {
+	margin: 40px 0 60px 0;
+}
+
+.btn-download, .btn-tryit {
+	background: transparent;
+	transition: text-shadow 1s, box-shadow 1s;	
+}
+
+.btn-download, .btn-download:hover, .btn-download:focus {
+	border-color: #f69078;
+	color: #f69078;
+}
+
+.btn-tryit, .btn-tryit:hover, .btn-tryit:focus {
+	border-color: #54c8eb;
+	color: #54c8eb;
+}
+.demo-edit b, .demo-edit u {
+	color: white;
+}
+.demo-edit b {
+	font-weight: 700;
+}
+
+.btn-download:hover, .btn-tryit:hover {
+	text-shadow: 0 0 20px;
+	box-shadow: 0 0 20px;
+}
+
+.marketing {
+	margin-top: 40px;
+}
+
+.featurette h2 {
+	margin-bottom: 40px;
 }

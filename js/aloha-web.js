@@ -12,7 +12,7 @@ $(function () {
 		}
 	}
 
-	$('.btn.startdemo').click(function () {
+	$('.btn-tryit').click(function () {
 		$(this).fadeOut();
 		aloha($('.demo-edit')[0]);
 		flashHeader($('.header h1'), 30, function () {
