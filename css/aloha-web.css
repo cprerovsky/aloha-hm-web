@@ -36,7 +36,7 @@ a.navbar-brand img {
 }
 
 body {
-	font-size: 16px;
+	font-size: 21px;
 }
 
 body * {
@@ -135,7 +135,7 @@ h2 b {
 	height: 100px;
 }
 
-.btn-download, .btn-tryit, .btn-example {
+.btn-download, .btn-tryit, .btn-example, .shop .featurette .btn {
 	background: transparent;
 	transition: text-shadow 1s, box-shadow 1s;
 }
@@ -160,7 +160,7 @@ h2 b {
 	margin-right: 15px;
 }
 
-.btn-download:hover, .btn-tryit:hover, .btn-example:hover {
+.btn-download:hover, .btn-tryit:hover, .btn-example:hover, .shop .featurette .btn:hover {
 	text-shadow: 0 0 20px;
 	box-shadow: 0 0 20px;
 }
@@ -193,7 +193,7 @@ h2 b {
 	margin-bottom: 40px;
 }
 
-.featurette .glyphicon {
+.features .featurette .glyphicon {
 	font-size: 100px;
 	margin-left: 30%;
 }
@@ -205,4 +205,22 @@ h2 b {
 #license .gpl-logo {
 	margin-top: 40px;
 	text-align: center;
+}
+
+.shop .featurette .glyphicon {
+	font-size: 50px;
+}
+
+.shop .head {
+	margin-bottom: 60px;
+}
+
+.shop .featurette .btn {
+	background: transparent;
+	border: 1px solid #7755a1;
+	color: #7755a1;
+}
+
+.shop .featurette>div {
+	margin-bottom: 60px;
 }
