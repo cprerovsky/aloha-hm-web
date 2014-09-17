@@ -51,7 +51,7 @@ body * {
 
 .navbar {
 	padding: 5px 0;
-	background: rgba(255,255,255,0.95);
+	background: white;
 }
 
 .navbar .container, .page-header .container {
@@ -66,11 +66,12 @@ body * {
 	margin-top: 60px;
 }
 
-.froggy {
-	background-image: url('../img/froggy.png');
-	background-position: 80% 0%;
-	background-size: 600px 380px;
-	background-repeat: no-repeat;	
+#froggy {
+	position: absolute;
+	right: -50px;
+	top: 120px;
+	width: 700px;
+	transition: top 1s, right 1s;
 }
 
 .header h1 {

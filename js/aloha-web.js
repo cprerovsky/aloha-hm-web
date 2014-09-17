@@ -20,4 +20,6 @@ $(function () {
 			aloha.selections.select(boundary, boundary, aloha.editor);
 		});
 	});
+
+	$('#froggy').attr('style', '');
 });
