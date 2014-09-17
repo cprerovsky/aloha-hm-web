@@ -131,12 +131,12 @@ h2 b {
 }
 
 .page-header .btn-wrap {
-	margin: 40px 0 60px 0;
+	height: 100px;
 }
 
-.btn-download, .btn-tryit {
+.btn-download, .btn-tryit, .btn-example {
 	background: transparent;
-	transition: text-shadow 1s, box-shadow 1s;	
+	transition: text-shadow 1s, box-shadow 1s;
 }
 
 .btn-download, .btn-download:hover, .btn-download:focus {
@@ -148,16 +148,35 @@ h2 b {
 	border-color: #54c8eb;
 	color: #54c8eb;
 }
-.demo-edit b, .demo-edit u {
+
+.btn-example, .btn-example:hover, .btn-example:focus {
+	border-color: #41bb98;
+	color: #41bb98;
+}
+
+.btn-download, .flip-container {
+	float: left;
+	margin-right: 15px;
+}
+
+.btn-download:hover, .btn-tryit:hover, .btn-example:hover {
+	text-shadow: 0 0 20px;
+	box-shadow: 0 0 20px;
+}
+
+.btn-tryit, .btn-example {
+	width: 100%;
+}
+
+.demo-edit {
+	min-height: 180px;
+}
+
+.demo-edit b, .demo-edit u, .demo-edit i {
 	color: white;
 }
 .demo-edit b {
 	font-weight: 700;
-}
-
-.btn-download:hover, .btn-tryit:hover {
-	text-shadow: 0 0 20px;
-	box-shadow: 0 0 20px;
 }
 
 .navbar .container, .header .container {

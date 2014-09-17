@@ -23,6 +23,7 @@
 		<!-- Custom styles for this template -->
 		<link href="css/scrolling-nav.css" rel="stylesheet">
 		<link href="css/aloha-web.css" rel="stylesheet">
+		<link href="css/flip.css" rel="stylesheet">
 	</head>
 <!-- NAVBAR
 ================================================== -->
@@ -61,8 +62,17 @@
 							</p>
 						</div>
 						<div class="btn-wrap">
-							<button class="btn btn-xlg btn-download">Download</button>
-							<button class="btn btn-xlg btn-tryit">Try it!</button>
+							<button class="btn btn-lg btn-download">Download</button>
+							<div class="flip-container" id="flip-toggle">
+								<div class="flipper">
+									<div class="front">
+										<button class="btn btn-lg btn-tryit">Try it</button>
+									</div>
+									<div class="back">
+										<button class="btn btn-lg btn-example">More</button>
+									</div>
+								</div>
+							</div>
 							<img src="img/froggy.png" class="froggy-xs hidden-sm hidden-md hidden-lg"/>
 						</div>
 					</div>

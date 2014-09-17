@@ -8,8 +8,8 @@ $(function () {
 		}
 	}
 
-	$('.btn-tryit').click(function () {
-		$(this).fadeOut();
+	$('.btn-tryit').on('mousedown', function () {
+		$('.flip-container').addClass('flip');
 		aloha($('.demo-edit')[0]);
 		var boundary = aloha.boundaries.fromEndOfNode($('.header-content h1')[0]);
 		aloha.selections.select(boundary, boundary, aloha.editor);
