@@ -56,10 +56,11 @@ body * {
 
 .page-header {
 	border: 0;
-	background: rgb(60, 60, 60);
 	padding-top: 40px;
 	box-shadow: inset 0px 0px 200px black;
 	margin-top: 60px;
+	background: rgb(60,60,60);
+	background-image: url('../img/stripe.png');
 }
 
 .froggy, .froggy-sm, .froggy-xs {
