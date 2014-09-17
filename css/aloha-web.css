@@ -54,10 +54,6 @@ body * {
 	background: white;
 }
 
-.navbar .container, .page-header .container {
-	padding: 0;
-}
-
 .page-header {
 	border: 0;
 	background: rgb(60, 60, 60);
@@ -66,12 +62,26 @@ body * {
 	margin-top: 60px;
 }
 
-#froggy {
+.froggy, .froggy-sm, .froggy-xs {
 	position: absolute;
-	right: -50px;
-	top: 120px;
+}
+
+.froggy {
+	top: 50px;
+	right: -15%;
 	width: 700px;
-	transition: top 1s, right 1s;
+}
+
+.froggy-sm {
+	width: 300px;
+	top: -120px;
+	right: 0px;
+}
+
+.froggy-xs {
+	width: 200px;
+	top: 105%;
+	right: -20px;
 }
 
 .header h1 {

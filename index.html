@@ -28,7 +28,7 @@
 ================================================== -->
 	<body>
 	    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
-	    	<div class="container">
+	    	<div class="container-fluid">
 	    		<div class="navbar-header">
 	    		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
 					<span class="sr-only">Toggle navigation</span>
@@ -50,8 +50,7 @@
 		</div>
 
 		<div class="page-header header">
-		<img id="froggy" src="img/froggy.png" style="top: 135px"/>
-			<div class="container">
+			<div class="container-fluid">
 				<div class="row">
 					<div class="col-md-6 header-content">
 						<div class="demo-edit">
@@ -64,7 +63,12 @@
 						<div class="btn-wrap">
 							<button class="btn btn-xlg btn-download">Download</button>
 							<button class="btn btn-xlg btn-tryit">Try it!</button>
+							<img src="img/froggy.png" class="froggy-xs hidden-sm hidden-md hidden-lg"/>
 						</div>
+					</div>
+					<div class="col-md-6">
+						<img src="img/froggy.png" class="froggy img-responsive hidden-xs hidden-sm"/>
+						<img src="img/froggy.png" class="froggy-sm img-responsive hidden-xs hidden-md hidden-lg"/>
 					</div>
 				</div>
 			</div>

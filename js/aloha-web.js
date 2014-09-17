@@ -1,25 +1,27 @@
 $(function () {
-	var $window = $(window);
-
-	function flashHeader($obj, size, callback) {
-		$obj.css('text-shadow', '0 0 ' + size + 'px white');
-		if (size > 0) {
+	function recur($obj, i, manipulate) {
+		manipulate($obj, i);
+		if (i > 0) {
 			setTimeout(function () {
-				flashHeader($obj, size -= 3, callback);
-			}, 10);
-		} else {
-			callback();
+				recur($obj, --i, manipulate);
+			}, 17);
 		}
 	}
 
 	$('.btn-tryit').click(function () {
 		$(this).fadeOut();
 		aloha($('.demo-edit')[0]);
-		flashHeader($('.header h1'), 30, function () {
-			var boundary = aloha.boundaries.fromEndOfNode($('.header-content h1')[0]);
-			aloha.selections.select(boundary, boundary, aloha.editor);
+		var boundary = aloha.boundaries.fromEndOfNode($('.header-content h1')[0]);
+		aloha.selections.select(boundary, boundary, aloha.editor);
+
+		// flash header
+		recur($('.header h1'), 10, function ($obj, i) {
+			$obj.css('text-shadow', '0 0 ' + i * 3 + 'px white');
+		});
+
+		// flash caret
+		recur($('.aloha-caret'), 10, function ($obj, i) {
+			$obj.css('box-shadow', '0 0 ' + i * 3 + 'px white');
 		});
 	});
-
-	$('#froggy').attr('style', '');
 });
