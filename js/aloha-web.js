@@ -53,4 +53,8 @@ $(function () {
 	setTimeout(function () {
 		$('.btn-wrap, .navbar-header, .navbar-right').fadeIn(2000);
 	}, 1000);
+	$('.froggy-container img')
+		.css('-webkit-filter', 'brightness(1)')
+		.css('filter', 'brightness(1)');
+
 });

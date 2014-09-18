@@ -62,6 +62,12 @@ body * {
 	padding: 7% 0;
 }
 
+.froggy-container img {
+	-webkit-filter: brightness(5);
+	filter: brightness(5);
+	transition: -webkit-filter 5s, filter 5s;
+}
+
 .navbar {
 	padding: 5px 0;
 	border: 0;
