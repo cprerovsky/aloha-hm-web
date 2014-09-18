@@ -61,11 +61,20 @@ body * {
 .navbar {
 	padding: 5px 0;
 	border: 0;
+	height: 60px;
 }
 
-.navbar .navbar-nav>li>a, .navbar .navbar-nav>li>a .glyphicon {
+.navbar-header, .navbar-right {
+	display: none;
+}
+
+.navbar .navbar-nav>li>a, .navbar .navbar-nav>li>a:hover, .navbar .navbar-nav>li>a .glyphicon {
 	color: white;
 	font-size: 18px;
+}
+
+.navbar-nav>li>a .glyphicon {
+	display: none;
 }
 
 .page-header {
@@ -127,7 +136,7 @@ body * {
 .header p {
 	font-size: 24px;
 	margin-bottom: 30px;
-	color: #eee;
+	color: white;
 }
 
 h2 b {
@@ -140,8 +149,8 @@ h2 b {
 }
 
 .navbar-collapse img {
-	width: 16px;
-	height: 16px;
+	width: 20px;
+	height: 20px;
 }
 
 .navbar-collapse .glyphicon, .navbar-collapse img {
@@ -155,18 +164,19 @@ h2 b {
 
 .page-header .btn-wrap {
 	height: 100px;
-	opacity: 0;
-	transition: opacity 1s;
+	display: none;
 }
 
 .btn-download, .btn-tryit, .btn-example, .shop .featurette .btn {
 	background: transparent;
 	transition: text-shadow 1s, box-shadow 1s;
+	outline: 0;
 }
 
 .btn-download, .btn-download:hover, .btn-download:focus, .btn-tryit, .btn-tryit:hover, .btn-tryit:focus, .btn-example, .btn-example:hover, .btn-example:focus {
 	border-color: white;
 	color: white;
+	outline: 0;
 }
 
 .btn-download, .flip-container {

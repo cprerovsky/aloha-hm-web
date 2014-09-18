@@ -51,6 +51,6 @@ $(function () {
 	setInterval(colorcycle, 15000);
 
 	setTimeout(function () {
-		$('.btn-wrap').css('opacity', 1);
-	}, 3000);
+		$('.btn-wrap, .navbar-header, .navbar-right').fadeIn(2000);
+	}, 1000);
 });
