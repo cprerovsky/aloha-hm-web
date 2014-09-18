@@ -58,6 +58,10 @@ body * {
 	transition: background-color 15s;
 }
 
+.froggy-container {
+	padding: 7% 0;
+}
+
 .navbar {
 	padding: 5px 0;
 	border: 0;
