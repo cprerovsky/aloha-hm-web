@@ -1,0 +1,12 @@
+.flip-container {
+	width: 250px;
+}
+
+.flip-container .flipper .front {
+	margin-right: 15px;
+}
+
+.flip-container .flipper .front, .flip-container .flipper .back {
+	position: static;
+	float: left;
+}
