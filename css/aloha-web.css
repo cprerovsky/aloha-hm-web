@@ -154,7 +154,7 @@ h2 b {
 	display: none;
 }
 
-.btn-download, .btn-tryit, .btn-example, .shop .featurette .btn {
+.btn-download, .btn-tryit, .btn-example, .shop .featurette .btn, .blog-entries .btn {
 	background: transparent;
 	transition: text-shadow 1s, box-shadow 1s;
 	outline: 0;
@@ -171,7 +171,7 @@ h2 b {
 	margin-right: 15px;
 }
 
-.btn-download:hover, .btn-tryit:hover, .btn-example:hover, .shop .featurette .btn:hover {
+.btn-download:hover, .btn-tryit:hover, .btn-example:hover, .shop .featurette .btn:hover, .blog-entries .btn:hover {
 	text-shadow: 0 0 20px;
 	box-shadow: 0 0 20px;
 }
@@ -227,12 +227,16 @@ h2 b {
 	margin-bottom: 60px;
 }
 
-.shop .featurette .btn {
+.shop .featurette .btn, .blog-entries .btn {
 	background: transparent;
-	border: 1px solid #7755a1;
-	color: #7755a1;
+	border: 1px solid #54c8eb;
+	color: #54c8eb;
 }
 
 .shop .featurette>div {
 	margin-bottom: 60px;
+}
+
+.blog-entries p {
+	font-size: 14px;
 }
