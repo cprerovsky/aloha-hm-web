@@ -53,9 +53,8 @@ body * {
     color: #333;
 }
 
-.funky {
+.funky, .navbar.funky {
 	background-color: #54c8eb;
-	transition: background-color 15s;
 }
 
 .froggy-container {
@@ -91,8 +90,8 @@ body * {
 .page-header {
 	border: 0;
 	position: relative;
-	padding-top: 40px;
-	margin-top: 60px;
+	padding-top: 100px;
+	margin-top: 0px;
 	min-height: 85%;
 }
 
@@ -146,7 +145,6 @@ h2 b {
 
 .navbar-default .navbar-toggle, .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
 	border: 0;
-	background: white;
 }
 
 .page-header .btn-wrap {

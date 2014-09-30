@@ -44,11 +44,15 @@ $(function () {
 			'#f69078' // salmon
 		];
 		var color = colors[parseInt(Math.random() * (colors.length - 1), 10)];
-		$('.funky').css('background-color', color);
+		$('.funky')
+			.css('transition', 'background-color 15s')
+			.css('background-color', color);
 	}
 
-	colorcycle();
-	setInterval(colorcycle, 15000);
+	setTimeout(function () {
+		colorcycle();
+		setInterval(colorcycle, 15000);
+	}, 1000);
 
 	setTimeout(function () {
 		$('.btn-wrap, .navbar-header, .navbar-right').fadeIn(2000);
